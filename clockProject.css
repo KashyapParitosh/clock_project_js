@@ -1,0 +1,222 @@
+#maincontainer{
+    height: 115vh;
+    width: 100%;
+    z-index: -2;
+    border: 3px solid red;
+    background-color: #3D087B
+    
+}
+#having_lunch{
+    background-image: url(./friends-eating-clipart-1.jpg);
+    background-size: cover;
+    background-position-y: 74px;
+    background-position-x: -55px;
+    height: 500px;
+    width: 600px;
+    /* border: 2px solid chocolate; */
+    position: absolute;
+    top: 300px;
+    left: 1150px;
+    border-radius: 20px;
+}
+#textInHavingLunch{
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 400px;
+    /* border: 2px solid darkgray; */
+    font-family: 'Permanent Marker', cursive;
+    font-size: 29px;
+    padding: 10px;
+    color: darkslateblue;
+}
+#clock{
+    height: 100px;
+    width: 250px;
+    /* border: 2px solid fuchsia; */
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    /* background-color: white; */
+    display: flex;
+}
+#textclock{
+    height: 47px;
+    width: 123px;
+    /* border: 2px solid gold; */
+    display: inline;
+    font-size: 55px;
+    margin-top: -12px;
+    padding: 15px;
+    color: honeydew;
+    font-family: 'Permanent Marker', cursive;
+}
+#clocklogo{
+    height: 90px;
+    width: 90px;
+}
+
+#timebox{
+    position: relative;
+    z-index: 100;
+    height: 160px;
+    width: 580px;
+    border: 2px solid antiquewhite;
+    background: var(--white) 0% 0% no-repeat padding-box;
+    border-radius: 15px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    margin-left: 1142px;
+    margin-top: 55px;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.time-boxes{
+    width: 80px;
+    height: 90px;
+    background-color:rgb(236, 235, 236);
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Acme', sans-serif;
+}
+.time-line{
+    font-size: 40px;
+    font-weight: bold;
+    background: none;
+    color: darkmagenta;
+    display: flex;
+    align-items: center;
+}
+.time-main{
+   font-size: 30px;
+   color: darkmagenta;
+   text-align: center;
+}
+#time-sub{
+    font-size: 20px;
+    color: darkmagenta;
+    text-align: center;
+}
+#am-time{
+    font-size: 30px;
+    color: darkmagenta;
+    text-align: center;
+}
+.box2{ 
+    height: 100px;
+    width: 521px;
+    border: 2px solid green;
+    background-color: #FFFFFF;
+    position: absolute;
+    right: 191px;
+    top: 141px;
+    z-index: 2;
+    opacity: 0.71;
+    border-radius: 10px;
+}
+.box3{
+    height: 100px;
+    width: 490px;
+    border: 2px solid green;
+    position: absolute;
+    top: 157px;
+    right: 206px;
+    z-index: 0;
+    background-color: #FFFFFF;
+    opacity: 0.22;
+    border-radius: 10px;
+}
+.time-select{
+    border-radius: 15px;
+    width: 609px;
+    height: 317px;
+    /* border: 2px solid navajowhite; */
+    margin-left: 140px;
+    margin-top: 80px;
+    background-color: #FFFFFF;
+}
+.rows-time-select{
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+    color: #3D087BDE;
+    padding: 20px;
+    font-weight: bolder;
+    font-family: 'Acme', sans-serif;
+}
+select{
+    height: 36px;
+    width: 277px;
+    color: #3D087BDE;
+    text-align: center;
+    border-radius: 4px;
+}
+.vertical-line{
+    height: 30px;
+    width: 0px;
+    border: 2px solid #EDEDED; 
+    margin-left: 39px;
+    display: inline-block;
+}
+.greetings{
+    height: 105px;
+    width: 597px;
+    border: 2px solid snow;
+    margin-top: 25px;
+    background-color: #6a419a;
+    border-radius: 10px;
+    opacity: 0.23;
+}
+.party-time{
+    height: 100px;
+    width: 377px;
+    border: 2px solid lightslategrey;
+    margin-top: 20px;
+    background: transparent linear-gradient(
+113deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%) 0% 0% no-repeat padding-box;
+}
+
+
+
+
+
+/* .box3{
+    height: 100px;
+    width: 356px;
+    border: 2px solid khaki;
+    position: absolute;
+    margin-top: 114px;
+    margin-left: 112px;
+    border-radius: 15px;
+    background-color: rgb(145, 198, 252);
+    opacity: 0.25;
+    z-index: -2;
+} */
+/* .box2{
+    height: 92px;
+    width: 400px;
+    border: 2px solid rgb(99, 90, 15);
+    position: absolute;
+    margin-top: -110px;
+    margin-left: 92px;
+    border-radius: 15px;
+    background-color: rgb(247, 223, 223);
+    z-index: -1;
+    opacity: 0.7;
+} */
+/* .box1{
+    height: 121px;
+    width: 479px;
+    border: 2px solid rgb(99, 90, 15);
+    margin-top: -143px;
+    margin-left: 50px;
+    border-radius: 15px;
+    background-color: white;
+    z-index: 2;
+    opacity: 1;
+} */
