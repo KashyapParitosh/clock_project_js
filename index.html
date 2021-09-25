@@ -16,90 +16,95 @@
 <body>
     <!-- main container -->
     <div id="maincontainer">
-        <!-- clock logo and text -->
-        <div id="clock">
-            <div><img id="clocklogo" src="./clock.png" alt="error loading logo"></div>
-            <div id="textclock">
-                CLOCK
-            </div>
-        </div>
+        <div class="header">
 
-        <!-- time vala boxes -->
-        <div id="timebox">
-            <div class="time-boxes time-line">TIME</div>
-            <div class="time-boxes">
-                <div class="time-main" id="time-hour">02</div>
-                <div id="time-sub">Hours</div>
-            </div>
-            <span style="font-size: 30px; color: #8A11BF; ">:</span>
-            <div class="time-boxes">
-                <div class="time-main" id="time-min">00</div>
-                <div id="time-sub">Mins</div>
-            </div>
-            <span style="font-size: 30px; color: #8A11BF; ">:</span>
-            <div class="time-boxes">
-                <div class="time-main" id="time-sec">25</div>
-                <div id="time-sub">Sec</div>
-            </div>
-            <span style="font-size: 30px; color: #8A11BF; ">:</span>
-            <div class="time-boxes bg-gradient">
-                <div id="am-time">PM</div>
-            </div>
-
-        </div>
-        <div class="timeboxs box3"></div>
-        <div class="timeboxs box2"></div>
-
-        <div class="left-container">
-            <!-- time  select -->
-            <div class="time-select" id="select-time">
-                <div class="rows-time-select" id="wake-up">
-                    <i class="fas fa-sun"></i> Set wake up time
-                    <select name="time" id="wake-up-timespan">
-                        <option value="8 AM - 9 AM">8 AM - 9 AM</option>
-                        <option value="9 AM - 10 AM">9 AM - 10 AM</option>
-                        <option value="10 AM - 11 AM">10 AM - 11 AM</option>
-                        <option value="11 AM - 12 AM">11 AM - 12 AM</option>
-                    </select>
+            <!-- clock logo and text -->
+            <div id="clock">
+                <div><img id="clocklogo" src="./clock.png" alt="error loading logo"></div>
+                <div id="textclock">
+                    CLOCK
                 </div>
+            </div>
 
-                <div class="vertical-line"></div>
-
-                <div class="rows-time-select" id="lunch"> 
-                    <i class="fas fa-utensils"></i> Set lunch time 
-                    <select name="time" id="lunch-timespan">
-                        <option value="12 PM - 1 PM">12 PM - 1 PM</option>
-                        <option value="1 PM - 2 PM">1 PM - 2 PM</option>
-                        <option value="2 PM - 3 PM">2 PM - 3 PM</option>
-                        <option value="3 PM - 4 PM">3 PM - 4 PM</option>
-                    </select>
+            <!-- time vala boxes -->
+            <div id="timebox">
+                <div class="time-boxes time-line">TIME</div>
+                <div class="time-boxes">
+                    <div class="time-main" id="time-hour">02</div>
+                    <div id="time-sub">Hours</div>
                 </div>
-
-                <div class="vertical-line"></div>
-
-                <div class="rows-time-select" id="nap">
-                    <i class="fas fa-bed"></i> Set nap time
-                    <select name="time" id="lunch-timespan">
-                        <option value="8 PM - 9 PM">8 PM - 9 PM</option>
-                        <option value="9 PM - 10 PM">9 PM - 10 PM</option>
-                        <option value="10 PM - 11 PM">10 PM - 11 PM</option>
-                        <option value="11 PM - 12 PM">11 PM - 12 PM</option>
-                    </select> 
+                <span style="font-size: 30px; color: #8A11BF; ">:</span>
+                <div class="time-boxes">
+                    <div class="time-main" id="time-min">00</div>
+                    <div id="time-sub">Mins</div>
                 </div>
+                <span style="font-size: 30px; color: #8A11BF; ">:</span>
+                <div class="time-boxes">
+                    <div class="time-main" id="time-sec">25</div>
+                    <div id="time-sub">Sec</div>
+                </div>
+                <span style="font-size: 30px; color: #8A11BF; ">:</span>
+                <div class="time-boxes bg-gradient">
+                    <div id="am-time">PM</div>
+                </div>
+                <div class="timeboxs box3"></div>
+                <div class="timeboxs box2"></div>
+            </div>
+           
+        </div>
+        <br> <br> <br> <br>
+        <div class="container">
 
-                <div class="greetings"></div>
-                <div class="party-time"></div>
+            <div class="left-container">
+                <!-- time  select -->
+                <div class="time-select" id="select-time">
+                    <div class="rows-time-select" id="wake-up">
+                        <i class="fas fa-sun"></i> Set wake up time
+                        <select name="time" id="wake-up-timespan">
+                            <option value="8 AM - 9 AM">8 AM - 9 AM</option>
+                            <option value="9 AM - 10 AM">9 AM - 10 AM</option>
+                            <option value="10 AM - 11 AM">10 AM - 11 AM</option>
+                            <option value="11 AM - 12 AM">11 AM - 12 AM</option>
+                        </select>
+                    </div>
+
+                    <div class="vertical-line"></div>
+
+                    <div class="rows-time-select" id="lunch">
+                        <i class="fas fa-utensils"></i> Set lunch time
+                        <select name="time" id="lunch-timespan">
+                            <option value="12 PM - 1 PM">12 PM - 1 PM</option>
+                            <option value="1 PM - 2 PM">1 PM - 2 PM</option>
+                            <option value="2 PM - 3 PM">2 PM - 3 PM</option>
+                            <option value="3 PM - 4 PM">3 PM - 4 PM</option>
+                        </select>
+                    </div>
+
+                    <div class="vertical-line"></div>
+
+                    <div class="rows-time-select" id="nap">
+                        <i class="fas fa-bed"></i> Set nap time
+                        <select name="time" id="lunch-timespan">
+                            <option value="8 PM - 9 PM">8 PM - 9 PM</option>
+                            <option value="9 PM - 10 PM">9 PM - 10 PM</option>
+                            <option value="10 PM - 11 PM">10 PM - 11 PM</option>
+                            <option value="11 PM - 12 PM">11 PM - 12 PM</option>
+                        </select>
+                    </div>
+
+                    <div class="greetings" id="greetings"></div>
+                    <div class="party-time" id="party">Party Time</div>
+                </div>
+            </div>
+
+            <div id="having_lunch">
+                <span id="textInHavingLunch">
+                    LET'S HAVE SOME LUNCH !!
+                    <span>
             </div>
         </div>
-
-        <div id="having_lunch">
-            <div id="textInHavingLunch">
-                LET'S HAVE SOME LUNCH !!
-            </div>
-        </div>
-
-
     </div>
+    <script src="./clockProject.js"></script>
 </body>
 
 </html>
@@ -107,5 +112,8 @@
 
 <!-- https://xd.adobe.com/view/21e6859f-f071-430e-b14d-dd806e0156e8-74b5/ -->
 
-<!-- zuber project
-https://clock-by-zuber.netlify.app/ -->
+<!-- zuber project -->
+<!-- https://clock-by-zuber.netlify.app/ -->
+
+<!-- rahul project link -->
+<!-- https://mernrash.github.io/Clock-Project/ -->

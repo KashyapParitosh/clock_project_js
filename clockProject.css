@@ -1,22 +1,45 @@
-#maincontainer{
-    height: 115vh;
-    width: 100%;
-    z-index: -2;
-    border: 3px solid red;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
     background-color: #3D087B
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#maincontainer{
+    /* height: 103vh; */
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 3rem;
+    /* z-index: -2; */
+    /* border: 1px solid red; */
+    /* background-color: #3D087B */
     
 }
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+}
 #having_lunch{
-    background-image: url(./friends-eating-clipart-1.jpg);
-    background-size: cover;
-    background-position-y: 74px;
-    background-position-x: -55px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: white;
     height: 500px;
     width: 600px;
+    padding: 1rem;
+    box-sizing: border-box;
     /* border: 2px solid chocolate; */
-    position: absolute;
-    top: 300px;
-    left: 1150px;
+    /* position: absolute; */
+    /* top: 300px;
+    left: 1150px; */
     border-radius: 20px;
 }
 #textInHavingLunch{
@@ -34,9 +57,9 @@
     height: 100px;
     width: 250px;
     /* border: 2px solid fuchsia; */
-    position: absolute;
-    top: 100px;
-    left: 100px;
+    /* position: absolute; */
+    /* top: 100px; */
+    /* left: 100px; */
     /* background-color: white; */
     display: flex;
 }
@@ -58,15 +81,15 @@
 
 #timebox{
     position: relative;
-    z-index: 100;
+    /* z-index: 100; */
     height: 160px;
     width: 580px;
     border: 2px solid antiquewhite;
     background: var(--white) 0% 0% no-repeat padding-box;
     border-radius: 15px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    margin-left: 1142px;
-    margin-top: 55px;
+    /* margin-left: 1142px; */
+    /* margin-top: 55px; */
     opacity: 1;
     display: flex;
     justify-content: center;
@@ -102,31 +125,33 @@
     color: darkmagenta;
     text-align: center;
 }
-#am-time{
-    font-size: 30px;
-    color: darkmagenta;
-    text-align: center;
+.bg-gradient{
+    background: transparent linear-gradient(161deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%) 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    font-size: 36px;
+    color: white;
 }
 .box2{ 
     height: 100px;
     width: 521px;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     background-color: #FFFFFF;
     position: absolute;
-    right: 191px;
-    top: 141px;
-    z-index: 2;
+    right: 26px;
+    top: 72px;
+    z-index: -4;
     opacity: 0.71;
     border-radius: 10px;
 }
 .box3{
     height: 100px;
     width: 490px;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     position: absolute;
-    top: 157px;
-    right: 206px;
-    z-index: 0;
+    top: 85px;
+    right: 39px;
+    z-index: -6;
     background-color: #FFFFFF;
     opacity: 0.22;
     border-radius: 10px;
@@ -136,8 +161,8 @@
     width: 609px;
     height: 317px;
     /* border: 2px solid navajowhite; */
-    margin-left: 140px;
-    margin-top: 80px;
+    /* margin-left: 140px;
+    margin-top: 80px; */
     background-color: #FFFFFF;
 }
 .rows-time-select{
@@ -166,11 +191,16 @@ select{
 .greetings{
     height: 105px;
     width: 597px;
-    border: 2px solid snow;
+    /* border: 2px solid snow; */
     margin-top: 25px;
     background-color: #6a419a;
     border-radius: 10px;
-    opacity: 0.23;
+    font-size: 30px;
+    color: white;
+    text-align: left;
+    /* opacity: 1; */
+    padding: 2rem;
+
 }
 .party-time{
     height: 100px;
@@ -178,45 +208,55 @@ select{
     border: 2px solid lightslategrey;
     margin-top: 20px;
     background: transparent linear-gradient(
-113deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%) 0% 0% no-repeat padding-box;
+    113deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%) 0% 0% no-repeat padding-box;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding-top: 28px;
+    font-family: 'Acme', sans-serif;
+}
+
+@media screen and (min-width:340px) and (max-width:400px) {
+   .header{
+       flex-direction: column;
+       margin-left: 198px;
+   }
+   #timebox{
+       width: 532px;
+       margin-left: -12px;
+       margin-top: 25px;
+   }
+   .box2{
+       width: 499px;
+       right: 16px;
+       top: 72px;
+   }   
+   .box3{
+       width: 456px;
+   } 
+   .container{
+       flex-direction: column;
+   }
+   .time-select{
+       width: 534px;
+       margin-left: 5px;
+   }
+   .rows-time-select{
+       font-size: 22px;
+   }
+   .greetings{
+       width: 538px;
+       margin-top: 600px;
+   }
+   #having_lunch{
+       width: 534px;
+       margin-left: 5px;
+       margin-top: 25px;
+   }
+   .party-time{
+       margin-left: 75px;
+   }
 }
 
 
 
-
-
-/* .box3{
-    height: 100px;
-    width: 356px;
-    border: 2px solid khaki;
-    position: absolute;
-    margin-top: 114px;
-    margin-left: 112px;
-    border-radius: 15px;
-    background-color: rgb(145, 198, 252);
-    opacity: 0.25;
-    z-index: -2;
-} */
-/* .box2{
-    height: 92px;
-    width: 400px;
-    border: 2px solid rgb(99, 90, 15);
-    position: absolute;
-    margin-top: -110px;
-    margin-left: 92px;
-    border-radius: 15px;
-    background-color: rgb(247, 223, 223);
-    z-index: -1;
-    opacity: 0.7;
-} */
-/* .box1{
-    height: 121px;
-    width: 479px;
-    border: 2px solid rgb(99, 90, 15);
-    margin-top: -143px;
-    margin-left: 50px;
-    border-radius: 15px;
-    background-color: white;
-    z-index: 2;
-    opacity: 1;
-} */
