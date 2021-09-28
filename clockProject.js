@@ -76,11 +76,32 @@ party.addEventListener("click", () => {
 });
 
 
-document.querySelector("#wake-up-timespan").addEventListener("change", wakeUp);
+document.querySelector("#wake-up-timespan").addEventListener("change", function () {
+    if(this.value === "select"){
+        console.log(this.value);
+        realTimeUpdate();
+    } else {
+        wakeUp();
+    }
+});
  
-document.querySelector("#lunch-timespan").addEventListener("change", haveLunch );
+document.querySelector("#lunch-timespan").addEventListener("change", function () { 
+    if(this.value === "select"){
+        console.log(this.value);
+        realTimeUpdate();
+    } else {
+        haveLunch();
+    }
+});
 
-document.querySelector("#napTime").addEventListener("change", sleep ); 
+document.querySelector("#napTime").addEventListener("change", function () {
+    if(this.value === "select"){
+        console.log(this.value);
+        realTimeUpdate();
+    } else {
+        sleep();
+    }  
+}); 
 
 
 function wakeUp () {
