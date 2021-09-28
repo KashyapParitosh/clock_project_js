@@ -39,19 +39,13 @@ function realTimeUpdate() {
     const min = tarik.getMinutes();
     const hr = tarik.getHours();
     if (hr >= 5 && hr < 12) {
-        greet.innerHTML = "Good Morning !!";
-        mess.innerText = "Wake up"
-        lunchimg.style.backgroundImage = "url('./Sunny day-bro.svg')";
+        wakeUp();
     }
     else if (hr >= 12 && hr < 18) {
-        greet.innerHTML = "Good AfterNoon !!";
-        mess.innerText = 'Lets Have Some Lunch !!'
-        lunchimg.style.backgroundImage = "url('Pizza sharing-cuate.svg')";
+        haveLunch();
     }
     else if (hr >= 20 && hr < 24) {
-        greet.innerHTML = "Good Night Dear !!";
-        mess.innerText = 'Nap Time !!';
-        lunchimg.style.backgroundImage = "url('./Sleep analysis-cuate.svg')";
+        sleep();
     }
     else {
         greet.innerText = "Have a Good Day";
@@ -82,6 +76,28 @@ party.addEventListener("click", () => {
 });
 
 
+document.querySelector("#wake-up-timespan").addEventListener("change", wakeUp);
+ 
+document.querySelector("#lunch-timespan").addEventListener("change", haveLunch );
+
+document.querySelector("#napTime").addEventListener("change", sleep ); 
+
+
+function wakeUp () {
+    greet.innerHTML = "Good Morning !!";
+    mess.innerText = "Wake up"
+    lunchimg.style.backgroundImage = "url('./Sunny day-bro.svg')";
+}
+function haveLunch () {
+    greet.innerHTML = "Good AfterNoon !!";
+    mess.innerText = 'Lets Have Some Lunch !!'
+    lunchimg.style.backgroundImage = "url('Pizza sharing-cuate.svg')";
+}
+function sleep () {
+    greet.innerHTML = "Good Night Dear !!";
+    mess.innerText = 'Nap Time !!';
+    lunchimg.style.backgroundImage = "url('./Sleep analysis-cuate.svg')";
+}
 
 
 
