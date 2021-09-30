@@ -7,7 +7,6 @@ const greet = document.getElementById("greetings");
 const party = document.getElementById('party');
 const mess = document.getElementById('textInHavingLunch');
 const lunchimg = document.getElementById('having_lunch');
-// const wish = document.getElementById("greetings");
 
 function concatZero(value) {
     return value < 10 ? '0'.concat(value) : value
@@ -40,12 +39,6 @@ const hr = tarik.getHours();
 
 
 // default function
-function chillkaro() {
-    mess.innerText = "Chill Karo";
-    lunchimg.style.backgroundImage = "url('./chill.svg')";
-    greet.style.display = "none";
-};
-chillkaro();
 
 
 
@@ -73,6 +66,8 @@ party.addEventListener("click", () => {
 
 // select time function
 document.querySelector("#wake-up-timespan").addEventListener("change", function () {
+    console.log(hr);
+    console.log()
     if (this.value == hr) {
         wakeUp();
     } else {
@@ -116,6 +111,12 @@ function sleep() {
     greet.style.display = "block";
 }
 
+function chillkaro() {
+    mess.innerText = "Chill Karo";
+    lunchimg.style.backgroundImage = "url('./chill.svg')";
+    greet.style.display = "none";
+};
+chillkaro();
 
 
 
