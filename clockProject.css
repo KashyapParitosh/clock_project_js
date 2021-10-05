@@ -246,7 +246,7 @@ select{
    }
    .greetings{
        width: 538px;
-       margin-top: 600px;
+       /* margin-top: 600px; */
    }
    #having_lunch{
        width: 534px;
@@ -255,7 +255,7 @@ select{
    }
    .party-time{
        margin-left: 75px;
-       margin-top: 600px;
+       /* margin-top: 600px; */
    }
 }
 
